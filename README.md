@@ -59,7 +59,7 @@ Hijau
 - Nilai ambang batas bawah : [40, 50, 50]
 - Nilai ambang batas atas : [80, 255, 255]
 
-Merah
+Biru
 - Nilai ambang batas bawah : [100, 50, 50]
 - Nilai ambang batas atas: [130, 255, 255]
 
@@ -71,6 +71,7 @@ Hue (H): Rentang nilai Hue dipilih dalam rentang 0-180 (dalam OpenCV) karena mer
 Saturation (S) dan Value (V): Nilai-nilai ambang batas untuk S dan V dipilih untuk menentukan seberapa jenuh dan seberapa cerah warna yang ingin dideteksi. Rentang yang luas dipilih untuk memungkinkan deteksi warna yang cukup fleksibel terhadap variasi dalam gambar. Namun, pemilihan nilai ambang batas ini dapat bervariasi tergantung pada kondisi cahaya, karakteristik gambar, dan preferensi pengguna.
 
 4. Penjelasan tahapan cara menyelesaikan projek
+
 A. Tahapan Cara Deteksi warna biru, merah dan hijau pada gambar
 
 Tahap 1: Membaca Gambar dan Membuat Plot
@@ -121,6 +122,7 @@ Membuat Plot Histogram Warna, plot histogram warna dibuat menggunakan fungsi plo
 Tahap 4: Menampilkan Plot Histogram
 
 Menampilkan Plot Histogram, plot histogram untuk warna biru, hijau, merah, dan warna dibuat dan ditampilkan menggunakan fungsi figure dan subplot dari matplotlib. Plot ini menampilkan histogram untuk masing-masing warna dan warna dalam gambar.
+
 C. Tahapan Cara Mencari Nilai Ambang atas yang Didapat
 
 Tahap 1: Membuat Fungsi untuk Meningkatkan Brightness dan Mendeteksi Warna
