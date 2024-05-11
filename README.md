@@ -21,17 +21,19 @@ d. Visualisasi, menggunakan subplot untuk menampilkan citra asli dan saluran war
 Dengan demikian, proses analisis citra tersebut terfokus pada pemahaman tentang bagaimana distribusi intensitas piksel berbeda di setiap saluran warna, serta bagaimana distribusi keseluruhan warna dalam citra. Ini memberikan pemahaman yang lebih mendalam tentang komposisi warna dan informasi visual dalam citra.
 
 2. Menganalisis Histogram
+
 A. Histogram Merah, Hijau, dan Biru dihasilkan dengan menghitung histogram untuk setiap saluran warna merah, hijau, dan biru menggunakan metode cv2.calcHist(). Histogram-histogram ini menunjukkan bagaimana intensitas piksel didistribusikan dalam masing-masing saluran warna. Misalnya, puncak pada nilai intensitas tertentu dalam histogram merah menandakan adanya banyak piksel dengan intensitas merah yang serupa dalam gambar.
 
 B.  Histogram Warna Gabungan dibuat dengan menghitung histogram untuk warna gabungan menggunakan ketiga saluran warna (merah, hijau, biru) setelah konversi gambar ke format RGB. Ini memperlihatkan bagaimana intensitas piksel terdistribusi secara keseluruhan dalam gambar, memberikan gambaran tentang variasi warna dan dominansi dalam gambar.
 
-Dengan menganalisis histogram-histogram ini, kita bisa mendapatkan pemahaman yang lebih dalam tentang karakteristik warna dalam gambar 'uts.jpg'. Kita bisa melihat seberapa merata distribusi warna, apakah ada warna yang dominan, dan sejauh mana variasi warna dalam gambar. Informasi ini penting dalam berbagai aplikasi pengolahan citra, seperti segmentasi warna, deteksi objek, atau penyesuaian warna.
+Dengan menganalisis histogram-histogram ini, kita bisa mendapatkan pemahaman yang lebih dalam tentang karakteristik warna dalam gambar 'nama.jpg'. Kita bisa melihat seberapa merata distribusi warna, apakah ada warna yang dominan, dan sejauh mana variasi warna dalam gambar. Informasi ini penting dalam berbagai aplikasi pengolahan citra, seperti segmentasi warna, deteksi objek, atau penyesuaian warna.
 
 3. Kedua fungsi menggunakan konversi ruang warna HSV untuk mempermudah dalam mendeteksi warna tertentu, karena HSV memisahkan informasi warna (Hue), kecerahan (Value), dan saturasi (Saturation).
 
 A. Deteksi Warna Biru
 - Nilai ambang batas bawah : [100, 50, 50]
 - Nilai ambang batas atas : [140, 255, 255]
+
 B. Deteksi Warna Merah-Biru
 > Merah
 - Nilai ambang batas bawah: [0, 50, 50]
@@ -41,7 +43,9 @@ B. Deteksi Warna Merah-Biru
 > Biru
 - Nilai ambang batas bawah : [100, 50, 50]
 - Nilai ambang batas atas: [130, 255, 255]
+
 C. Deteksi Warna Merah-Hijau-biru
+
 
 Merah
 
